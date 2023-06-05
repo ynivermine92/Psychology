@@ -1,0 +1,58 @@
+.about-company {
+    background: #2F2D30;
+
+    &__about {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: -30px;
+    }
+
+    &__title {
+        margin-left: auto;
+        font-size: 40px;
+        line-height: 48px;
+        color: #fff;
+        @extend %Cor-400;
+        padding: 140px 0px 130px 0px;
+        color: #ffff;
+        max-width: 468px;
+    }
+
+    &__comment-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__comment-item {
+        border: 1px solid #FFFFFF;
+        padding: 28px 20px;
+    }
+
+    &__comment-text {
+        color: #ffff;
+        @extend %Cor-500;
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 312px;
+    }
+
+    &__sub-title {
+        padding-top: 46px;
+        margin: 0 auto;
+        font-size: 24px;
+        max-width: 757px;
+        line-height: 29px;
+        color: #ffff;
+        @extend %Cor-700;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+    &__link{
+        margin: 42px 0px 26px 0px;
+    }
+}

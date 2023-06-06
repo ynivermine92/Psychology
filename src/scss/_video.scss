@@ -1,0 +1,170 @@
+.video {
+
+    margin-top: 144px;
+    border-top: 1px solid #000000;
+
+    &__wrapper {
+        max-width: 740px;
+        margin: 0 auto;
+        position: relative;
+        padding: 96px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 321.5px;
+            border: 1px solid #000000;
+            left: 0;
+            top: 0;
+        }
+
+        &::before {
+            content: 'Відео від автора';
+            position: absolute;
+            transform: rotate(-90deg);
+            font-size: 64px;
+            max-width: 536px;
+            @extend %Cor-700;
+            left: -220px;
+            bottom: 272px;
+        }
+    }
+
+
+    .video-fashion__popup {
+        max-width: 551px;
+        width: 100%;
+        height: 723px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        img {
+            content: '';
+            background-image: url('../img/video/play.png');
+            width: 91px;
+            height: 91px;
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            right: 50px;
+        }
+
+        &::before {
+            content: 'Переглянути';
+            position: absolute;
+            right: -100px;
+            top: 44%;
+            font-size: 24px;
+            @extend %Cor-700;
+            color: #3C3030;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .video-fashion__popup {
+        &::before {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 830px) {
+    .video {
+        border: none;
+
+        &__wrapper {
+            margin: 96px 0px;
+            padding: 0;
+
+            &::after {
+                transform: none;
+                right: -17px;
+                width: 170px;
+                height: 1px;
+                top: 28px;
+                left: auto;
+            }
+
+            &::before {
+                font-size: 50px;
+                max-width: 536px;
+                left: -18px;
+                top: -4%;
+                bottom: auto;
+                transform: none;
+                position: initial;
+            }
+        }
+    }
+
+    .video-fashion__popup {
+        margin: 0 auto;
+        margin-top: 30px;
+
+        img {
+            top: 54% !important;
+            right: 44% !important;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    .video {
+        margin-top: 0px;
+
+        &__wrapper {
+            margin: 0;
+            padding-top: 38px;
+            padding-right: 0px;
+            padding-left: 0px;
+
+            &::before {
+                font-size: 32px;
+                position: initial;
+            }
+
+            &::after {
+                top: 55px;
+            }
+
+        }
+
+        &__content-border {
+            top: 55px;
+        }
+    }
+
+    .video-fashion__popup {
+        height: 420px !important;
+        max-width: 100% !important;
+        &::before {
+            display: block;
+            right: 46%!important;
+            top: 108%!important;
+            font-size: 16px !important;
+
+        }
+
+        img {
+            top: 93% !important;
+            width: 65px !important;
+            height: 65px !important;
+            right: 47% !important;
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .video {
+        &__wrapper{
+            &::after{
+                width: 70px;
+            }
+        }
+    }
+}

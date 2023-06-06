@@ -2,15 +2,22 @@
     background: #2F2D30;
 
     &__about {
-        position: relative;
+        display: flex;
     }
+    &__title{
+        display: none;
+        @extend %Cor-700;
+        color: #fff;
+        padding-top: 38px;
+        padding-bottom: 12px;
 
+    }
     &__img {
-        position: absolute;
+        position: relative;
         top: -30px;
     }
 
-    &__title {
+    &__text {
         margin-left: auto;
         font-size: 40px;
         line-height: 48px;
@@ -48,11 +55,79 @@
         color: #ffff;
         @extend %Cor-700;
     }
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: center;
     }
-    &__link{
+
+    &__link {
         margin: 42px 0px 26px 0px;
     }
+}
+
+
+@media (max-width: 1150px) {
+    .about-company {
+        &__about {
+            display: block;
+        }
+
+        &__text {
+            margin: 0 auto;
+        }
+
+        &__comment-items {
+            display: block;
+        }
+
+        &__comment-item {
+            margin-bottom: 20px;
+        }
+
+        &__comment-item:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .about-company {
+        &__img {
+            width: 100%;
+            object-fit: contain;
+        }
+        &__text {
+            padding: 26px 0px 12px 0px;
+            font-size: 24px;
+            line-height: 29px;
+            max-width: 320px;
+            margin-left: 0;
+        }
+        &__title{
+            display: block;
+            max-width: 231px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__comment-item {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__sub-title {
+            max-width: 320px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__link{
+            font-size: 14px;
+            max-width: 150px;
+            padding: 19px 13px;
+        }
+        &__link +  &__link{
+            margin-left: 19px;
+        }
+    }
+
 }

@@ -1,2 +1,4 @@
 // Custom Scripts
-@@include('main.js')
+@@include('./libs/fancybox.umd.js');
+@@include('main.js');
+

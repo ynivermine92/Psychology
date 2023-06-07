@@ -26,4 +26,15 @@ burgerMenu()
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
-  
+
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+  });

@@ -23,6 +23,7 @@
 }
 
 .swiper-title,
+.benefit__title-mob,
 .about-company__text {
   font-family: "Cormorant-Regular";
   font-weight: 400;
@@ -2433,6 +2434,13 @@ html.with-fancybox body.hide-scrollbar {
   max-width: 333px !important;
 }
 
+.benefit__title-mob {
+  font-size: 32px;
+  display: none;
+}
+
+/* @extend %Cor-500; */
+
 .swiper {
   width: 356px;
   height: 691px;
@@ -2515,8 +2523,6 @@ html.with-fancybox body.hide-scrollbar {
   right: -15.8%;
   color: white;
 }
-
-/* @extend %Cor-500; */
 
 /**
  * Swiper 7.3.1
@@ -3339,8 +3345,60 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-@media (max-width: 1730px) {
+@media (max-width: 1770px) {
   .top__border {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .benefit {
+    /* slider */
+  }
+
+  .benefit__wrapper {
+    position: static;
+  }
+
+  .benefit__title-mob {
+    display: block;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .benefit__items {
+    display: block;
+  }
+
+  .benefit__slider {
+    position: relative;
+    height: 820px;
+  }
+
+  .benefit__item {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .benefit__advantage-text {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .benefit__advantage-text-second {
+    width: 90%;
+    max-width: 90% !important;
+  }
+
+  .benefit .swiper-pagination {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 182px !important;
+  }
+
+  .benefit .swiper-title {
     display: none;
   }
 }
@@ -3348,6 +3406,15 @@ button.swiper-pagination-bullet {
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .top__images {
+    width: 400px;
+    height: 924px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -3370,15 +3437,6 @@ button.swiper-pagination-bullet {
 
   .about-company__comment-item:last-child {
     margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .top__images {
-    width: 400px;
-    height: 766px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -3505,7 +3563,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 914px) {
   .top__wrapper {
     display: block;
   }
@@ -3523,6 +3581,7 @@ button.swiper-pagination-bullet {
     -o-object-fit: cover;
        object-fit: cover;
     margin-top: 50px;
+    height: 500px;
   }
 
   .top__socials {
@@ -3578,6 +3637,50 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 800px) {
+  .benefit__slider {
+    height: auto;
+  }
+
+  .benefit__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .benefit .swiper-pagination {
+    right: 49% !important;
+  }
+
+  .benefit__slider {
+    position: relative;
+  }
+
+  .benefit__slider::after {
+    display: block;
+  }
+
+  .benefit__slider__item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .benefit__slider__advantage-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .benefit__slider__advantage-text-second {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .swiper-pagination {
+    bottom: -16% !important;
+  }
+}
+
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
@@ -3585,6 +3688,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 650px) {
+  .top {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
   .navbar img {
     width: 177px;
     height: 29px;
@@ -3724,11 +3832,46 @@ button.swiper-pagination-bullet {
     right: 47% !important;
     width: 320px;
   }
+
+  .benefit__title {
+    font-size: 32px;
+    max-width: 256px;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 38px;
+  }
+
+  .benefit__sub-title {
+    max-width: 201px;
+    font-size: 18px;
+    line-height: 21.8px;
+  }
+
+  .benefit__advantage-text {
+    font-size: 18px;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .swiper {
+    width: 258px;
+  }
+
+  .swiper-slide img {
+    width: 217px;
+    height: 177px;
+  }
+
+  .swiper-box__text {
+    font-size: 16px;
   }
 }
 

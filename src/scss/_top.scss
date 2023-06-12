@@ -63,7 +63,7 @@
 }
 
 
-@media (max-width: 1730px) {
+@media (max-width: 1770px) {
     .top {
         &__border {
             display: none;
@@ -71,17 +71,17 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1190px) {
     .top {
         &__images {
             width: 400px;
-            height: 766px;
+            height: 924px;
             object-fit: cover;
         }
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 914px) {
     .top {
         &__wrapper {
             display: block;
@@ -94,9 +94,10 @@
         }
 
         &__images {
-            width: 88%;
+            width: 88%; 
             object-fit: cover;
             margin-top: 50px;
+            height: 500px;
         }
 
         &__socials {
@@ -110,6 +111,10 @@
 }
 
 @media (max-width: 650px) {
+    .top{
+        height: auto;
+        padding-bottom: 50px;
+    }
     .navbar{
         img{
             width: 177px;

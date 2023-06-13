@@ -1,3 +1,21 @@
+
+function accordion() {
+    const items = document.querySelectorAll('.accordion__item-trigger')
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode
+            if (parent.classList.contains('accordion__item-active')) {
+                parent.classList.remove('accordion__item-active')
+            } else {
+                document
+                    .querySelectorAll('.accordion__item')
+                    .forEach(child => child.classList.remove('accordion__item-active'))   
+                parent.classList.add('accordion__item-active')
+            }
+        })
+    })
+}
+accordion() 
 function burgerMenu() {
     const burger = document.querySelector('.burger')
     const menu = document.querySelector('.menu')
@@ -26,15 +44,17 @@ burgerMenu()
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
-
-  var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-        delay: 7000,
-        disableOnInteraction: false,
+function slider(){
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-  });
+      autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+        },
+    });
+}
+slider()

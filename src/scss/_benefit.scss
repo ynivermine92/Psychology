@@ -9,9 +9,8 @@
   }
 
   &__title {
-    font-size: 64px;
+    font-size: 22px;
     line-height: 78px;
-    max-width: 511px;
     @extend %Cor-700;
     color: #ffff;
     margin: 0 auto;
@@ -32,7 +31,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+    padding-bottom: 90px;
     gap: 0px 40px;
   }
 
@@ -65,7 +64,13 @@
     line-height: 24px;
     max-width: 341px;
   }
-
+  &__reviews-text-mob{
+    @extend %Cor-500;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 341px;
+    display: none;
+  }
   &__advantage-text-second {
     max-width: 333px !important;
   }
@@ -75,9 +80,103 @@
     @extend %Cor-400;
     display: none;
   }
+
+  &__reviews-comment {
+
+    background-image: url('../img/benefit/Rectangle-2.svg');
+    height: 108px;
+    max-width: 380.5px;
+    margin-bottom: 40px;
+  }
+
+  &__reviews-comment:nth-child(even) {
+    background-image: url('../img/benefit/Rectangle.svg');
+  }
+
+  &__reviews-comment:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reviews-items {
+    padding-top: 118px;
+    max-width: 480px;
+
+  }
+
+  &__reviews-item {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-top: -33px;
+      margin-right: 10px;
+    }
+  }
+
+
+
+  &__reviews-text {
+    font-size: 20px;
+    @extend %Cor-500;
+    padding: 19px 28px 25px 30px;
+  }
+
+  &__showWork-wrapper {
+    position: relative;
+    max-width: 750px;
+    background-color: #ffff;
+    padding-left: 44px;
+    padding-bottom: 218px;
+    padding-top: 106px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #ffff;
+      width: 170px;
+      top: 0;
+      height: 710px;
+      right: -170px;
+    }
+  }
+
+  &__showWork-title {
+    font-size: 64px;
+    @extend %Cor-700;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  &__showWork-text {
+    padding-top: 30px;
+    font-size: 24px;
+    @extend %Cor-500;
+    max-width: 517px;
+
+  }
+
 }
 
+@media (max-width: 1500px) {
+  .benefit {
+    &__showWork-wrapper {
+      padding-right: 40px;
 
+      &:after {
+        display: none;
+      }
+    } 
+  }
+  
+
+}
 
 
 
@@ -132,6 +231,44 @@
 
 }
 
+@media (max-width: 1150px) {
+  .benefit {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__reviews-items {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: inherit;
+    }
+    &__items{
+      padding-bottom: 0px;
+    }
+    &__showWork-wrapper {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .benefit {
+    &__reviews-comment {
+      max-width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .benefit__reviews-item img {
+      margin-top: 16px;
+    }
+  }
+}
 
 @media (max-width: 800px) {
   .benefit {
@@ -185,8 +322,8 @@
       font-size: 32px;
       max-width: 256px;
       text-align: center;
-       padding-bottom: 20px;
-       line-height: 38px;
+      padding-bottom: 20px;
+      line-height: 38px;
     }
 
     &__sub-title {
@@ -200,14 +337,52 @@
       width: 100% !important;
       max-width: 100% !important;
     }
+    &__inner{
+      flex-wrap: wrap-reverse;
+    }
+    &__showWork-wrapper{
+      margin-top: 70px;
+      padding: 0px 20px 20px 20px;
+    }
+    &__showWork-title{
+      font-size: 32px;
+      max-width: 320px;
+      padding-top: 30px;
+    }
+    &__showWork-text{
+      max-width: 320px;
+      font-size: 16px;
+    }
   }
 
 }
-
-@media (max-width: 430px) {
-  .swiper{
-    width:258px;
+@media (max-width: 550px) {
+  .benefit {
+    &__reviews-text-mob{
+      display: block;
+      max-width: 320px;
+      font-size: 16px;
+      padding: 20px;
+    }
+    &__reviews-text{
+      display: none;
+    }
+    &__reviews-comment{
+      background-size: initial;
+    }
+    &__reviews-comment{
+      background-position:right;
+    }
+    &__reviews-comment:nth-child(even) {
+      background-position:left;
+    }
   }
+}
+@media (max-width: 430px) {
+  .swiper {
+    width: 258px;
+  }
+
   .swiper-slide {
     img {
       width: 217px;
@@ -215,10 +390,10 @@
     }
   }
 
-  .swiper-box__text{
+  .swiper-box__text {
     font-size: 16px;
-}
-
+  }
+  
 }
 
 /* @extend %Cor-500; */

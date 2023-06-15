@@ -44,6 +44,8 @@ burgerMenu()
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
+
+  
 function slider(){
     var swiper = new Swiper(".mySwiper", {
       direction: "vertical",
@@ -58,3 +60,42 @@ function slider(){
     });
 }
 slider()
+
+function sliderSpeaker(){
+    var speakerSwiper = new Swiper(".speaker-slider", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+}
+sliderSpeaker()
+
+
+function pricesSlider(){
+    var pricesSwiper = new Swiper(".prices-slider", {
+        spaceBetween: 30,
+        hashNavigation: {
+          watchState: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+}
+pricesSlider()
+
+function reviewsSlider(){
+    var speakerSwiper = new Swiper(".reviews-slider", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+}
+reviewsSlider()

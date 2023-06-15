@@ -1,0 +1,18 @@
+.speaker {
+    padding-top: 82px;
+    padding-bottom: 140px;
+    .container {
+        max-width: 1254px;
+    }
+
+    .title {
+        padding-bottom: 74px;
+        font-size: 64px;
+        width: 217px;
+        @extend %Cor-700;
+        margin: 0 auto;
+
+    }
+
+}
+

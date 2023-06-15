@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+.record__title,
 .prices__moduls__link-btn,
 .prices__sum span + span,
 .prices__sum span,
@@ -25,6 +26,7 @@
   font-weight: 700;
 }
 
+.record__sub-title,
 .prices__moduls-text,
 .accordion .accordion__item .accordion__item-content .content__text,
 .benefit .swiper-box__text,
@@ -44,6 +46,11 @@
 .about-company__text {
   font-family: "Cormorant-Regular";
   font-weight: 400;
+}
+
+body {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
 }
 
 .link-first {
@@ -205,10 +212,6 @@ h6 {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-body {
-  /* @extend %Mon-700; */
 }
 
 body.locked {
@@ -3102,6 +3105,82 @@ html.with-fancybox body.hide-scrollbar {
   position: relative;
 }
 
+.record {
+  background-color: #2F2D30;
+  padding-bottom: 150px;
+}
+
+.record__wrapper {
+  max-width: 962px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.record__content {
+  max-width: 460px;
+  width: 100%;
+  position: relative;
+}
+
+.record___inner img {
+  max-width: 407px;
+  height: 397px;
+}
+
+.record__title {
+  padding-top: 60px;
+  padding-bottom: 18px;
+  font-size: 36px;
+  color: #fff;
+  line-height: 44px;
+  max-width: 336px;
+}
+
+.record__sub-title {
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  padding-bottom: 69px;
+}
+
+.record__sub-title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/record/record-icon.png");
+  width: 154px;
+  height: 82px;
+  bottom: -26px;
+  cursor: pointer;
+  left: 30px;
+}
+
+.record__telegram {
+  color: #fff;
+  width: 260px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 8px 8px 7px 7px;
+  border: 1px solid #FFFFFF;
+  margin-left: auto;
+}
+
+.record__telegram span {
+  padding-left: 8px;
+}
+
 /**
  * Swiper 7.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4243,6 +4322,17 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 920px) {
+  .record__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 914px) {
   .top__wrapper {
     display: block;
@@ -4521,6 +4611,44 @@ button.swiper-pagination-bullet {
 
   .reviews .swiper-slide__sub-title span {
     font-size: 24px;
+  }
+
+  .record {
+    padding-bottom: 50px;
+  }
+
+  .record__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .record__inner {
+    margin: 0 auto;
+  }
+
+  .record__inner img {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    min-height: 205px;
+  }
+
+  .record__title {
+    font-size: 32px;
+  }
+
+  .record__telegram {
+    margin-top: 60px;
   }
 }
 

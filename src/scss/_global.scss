@@ -24,7 +24,7 @@
 
 // Body & Locked
 body {
-    /* @extend %Mon-700; */
+    @extend %Mon-700;
     &.locked {
         overflow: hidden;
     }

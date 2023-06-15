@@ -1,0 +1,113 @@
+.record {
+    background-color: #2F2D30;
+    padding-bottom: 150px;
+
+    &__wrapper {
+        max-width: 962px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    &__content {
+        max-width: 460px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    &___inner {
+        img {
+            max-width: 407px;
+            height: 397px;
+        }
+    }
+
+    &__title {
+        padding-top: 60px;
+        padding-bottom: 18px;
+        font-size: 36px;
+        color: #fff;
+        line-height: 44px;
+        @extend %Cor-700;
+        max-width: 336px;
+    }
+
+    &__sub-title {
+        @extend %Cor-500;
+        font-size: 18px;
+        line-height: 22px;
+        position: relative;
+        padding-bottom: 69px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/record/record-icon.png');
+            width: 154px;
+            height: 82px;
+            bottom: -26px;
+            cursor: pointer;
+            left: 30px;
+        }
+    }
+
+    &__telegram {
+        color: #fff;
+        width: 260px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 8px 8px 7px 7px;
+        border: 1px solid #FFFFFF;
+        margin-left: auto;
+
+        span {
+            padding-left: 8px;
+        }
+    }
+
+}
+
+@media (max-width: 920px) {
+    .record {
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .record {
+        padding-bottom: 50px;
+        &__wrapper {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &__inner {
+            margin: 0 auto;
+
+            img {
+                padding-top: 50px;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                min-height: 205px;
+            }
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__telegram{
+            margin-top: 60px;
+        }
+    }
+}

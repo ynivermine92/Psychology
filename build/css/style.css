@@ -26,6 +26,7 @@
   font-weight: 700;
 }
 
+.footer a,
 .record__sub-title,
 .prices__moduls-text,
 .accordion .accordion__item .accordion__item-content .content__text,
@@ -41,6 +42,7 @@
   font-weight: 500;
 }
 
+.footer__text,
 .benefit .swiper-title,
 .benefit__title-mob,
 .about-company__text {
@@ -2095,7 +2097,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .menu__item-link {
-  color: #2F2D30;
+  color: #b4b1b6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3107,7 +3109,6 @@ html.with-fancybox body.hide-scrollbar {
 
 .record {
   background-color: #2F2D30;
-  padding-bottom: 150px;
 }
 
 .record__wrapper {
@@ -3179,6 +3180,61 @@ html.with-fancybox body.hide-scrollbar {
 
 .record__telegram span {
   padding-left: 8px;
+}
+
+footer {
+  background: #2F2D30;
+  padding: 50px 0 50px 0;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item {
+  max-width: 300px;
+}
+
+.footer__title {
+  padding-bottom: 35px;
+  font-size: 32px;
+}
+
+.footer__text {
+  line-height: 24px;
+}
+
+.footer__about-info + .footer__about-info {
+  margin-top: 10px;
+}
+
+.footer__sub-title {
+  padding-bottom: 35px;
+}
+
+.footer__social-info + .footer__social-info {
+  margin-top: 10px;
+}
+
+.footer__about-info {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /**
@@ -4510,6 +4566,14 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 750px) {
+  .footer__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
 @media (max-width: 660px) {
   .speaker .swiper-slide__conntent:last-child {
     display: none;
@@ -4809,10 +4873,7 @@ button.swiper-pagination-bullet {
 
   .video-fashion__popup img {
     top: 93% !important;
-    width: 65px !important;
-    height: 65px !important;
-    right: 47% !important;
-    width: 320px;
+    right: 40% !important;
   }
 
   .benefit__title {
@@ -4909,6 +4970,16 @@ button.swiper-pagination-bullet {
 
   .prices .swiper-pagination-bullet-active {
     background: white !important;
+  }
+
+  .footer__items {
+    display: block;
+  }
+
+  .footer__item {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

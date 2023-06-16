@@ -98,17 +98,13 @@ function pricesSlider(){
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        }
     });
 }
 pricesSlider()
 
 function reviewsSlider(){
-    var speakerSwiper = new Swiper(".reviews-slider", {
+    var reviewsSwiper = new Swiper(".reviews-slider", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

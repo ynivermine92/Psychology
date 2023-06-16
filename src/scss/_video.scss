@@ -8,7 +8,7 @@
         margin: 0 auto;
         position: relative;
         padding: 96px;
-
+        
         &::after {
             content: '';
             position: absolute;
@@ -151,10 +151,8 @@
 
         img {
             top: 93% !important;
-            width: 65px !important;
-            height: 65px !important;
-            right: 47% !important;
-            width: 320px;
+            right: 40% !important;
+
         }
     }
 }

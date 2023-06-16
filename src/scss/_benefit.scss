@@ -82,19 +82,16 @@
   }
 
   &__reviews-comment {
-
-    background-image: url('../img/benefit/Rectangle-2.svg');
+    background-image: url('../img/benefit/Rectangle2.svg');
     height: 108px;
     max-width: 380.5px;
     margin-bottom: 40px;
   }
 
-  &__reviews-comment:nth-child(even) {
-    background-image: url('../img/benefit/Rectangle.svg');
-  }
-
+  
   &__reviews-comment:nth-child(even) {
     display: flex;
+    background-image: url('../img/benefit/Rectangle.svg');
     flex-direction: row-reverse;
   }
 
@@ -142,7 +139,7 @@
       background-color: #ffff;
       width: 170px;
       top: 0;
-      height: 740px;
+      height: 744px;
       right: -170px;
     }
   }

@@ -2446,20 +2446,17 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .benefit__reviews-comment {
-  background-image: url("../img/benefit/Rectangle-2.svg");
+  background-image: url("../img/benefit/Rectangle2.svg");
   height: 108px;
   max-width: 380.5px;
   margin-bottom: 40px;
 }
 
 .benefit__reviews-comment:nth-child(even) {
-  background-image: url("../img/benefit/Rectangle.svg");
-}
-
-.benefit__reviews-comment:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("../img/benefit/Rectangle.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -2514,7 +2511,7 @@ html.with-fancybox body.hide-scrollbar {
   background-color: white;
   width: 170px;
   top: 0;
-  height: 740px;
+  height: 744px;
   right: -170px;
 }
 

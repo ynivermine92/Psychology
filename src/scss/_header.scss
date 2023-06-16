@@ -34,7 +34,7 @@
 
     // .menu__item-link
     &__item-link {
-        color: #b4b1b6;
+        color: black;
         display: flex;
         position: relative;
         transition: 0.5s color;
@@ -82,11 +82,14 @@
             height: 100vh;
             width: 100vw;
             flex-direction: column;
-            pointer-events: all;
+            pointer-events: all;;
             justify-content: center;
             align-items: center;
             z-index: 2;
             animation: fade 0.1s linear;
+        }
+        &__item-link {
+            color: #ffff;
         }
     }
 }
